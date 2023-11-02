@@ -1,0 +1,37 @@
+total = 0
+count = 0
+
+while True:
+    user_input = input("Enter an integer (or 'q' to quit): ")
+
+    if user_input == 'q':
+        break
+
+    try:
+        number = int(user_input)
+        total += number
+        count += 1
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+if count > 0:
+    average = total / count
+    print("Average of", count, "numbers is:", round(average, 2))
+else:
+    print("No numbers entered.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
